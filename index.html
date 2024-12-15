@@ -4,33 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
-    rel="stylsheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    
-
 </head>
 <body>
-    
-    <div class="nav">
-      <div class="home">
+  <div class="nav">
+    <div class="home">
         <a href="index.html">
-          <img class = "homeicon" src="home.png"/>
+            <img class="homeicon" src="home.png" />
         </a>
-      </div>
-      <label for="site-search">Search :</label>
-      <input type="search" id="site-search" name="q" placeholder="Type your search here..."/>
-      <button type = "submit">
-        <img src="search.jpg"/>
-      </button> 
-    </div> 
+    </div>
+    <label for="site-search"></label>
+    <input type="search" id="site-search" name="q" placeholder="Type your search here..." />
+    <div class="dropdown">
+        <img src="menu-icon.png" class="menu-icon" alt="Menu" id="menuIcon">
+        <div class="dropdown-content" id="dropdownMenu">
+            <div class="tabs">
+                <button class="tab" data-tab="tab-darkmode">Dark Mode</button>
+                <button class="tab" data-tab="tab-signin">Sign In</button>
+            </div>
+            <div class="tab-content" id="tab-darkmode">
+                <button id="darkModeToggle">Dark Mode</button>
+            </div>
+            <div class="tab-content" id="tab-signin">
+                <a href="signin.html" id="signInLink">Sign In</a>
+            </div>
+        </div>      
+    </div>
+  </div>
 
-    <div class ="baniere">
-        <div class ="video">
+  </div>
+    <div class="baniere">
+        <div class="video">
             <video src="baniere.mp4" autoplay loop muted></video>
-        </div>  
-        
-        <div class = "titre">
+        </div>
+        <div class="titre">
             <h1>ART GALLERY</h1>
         </div>
     </div>
@@ -158,6 +166,8 @@
     </div>
   </div>
 </div>
+
+    <script src="main.js"></script>
 
 </body>
 </html>
